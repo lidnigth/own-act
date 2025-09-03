@@ -1,13 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f2f2f2;
+    color:rgb(239, 249, 255);
+    background: #b1ccd4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 .card {
-    background: rgb(183, 218, 238);
+    background: rgb(70, 79, 85);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(130, 166, 233, 0.1);
@@ -21,13 +22,17 @@ input {
 }
 button {
     padding: 8px 12px;
-    background: #5fb46b;
+    background: #499175;
     color: white;
     border-radius: 10px;
     border-color: #f2f2f2;
     cursor: pointer;
 }
 #resultado {
+    margin-top: 15px;
+    font-weight: bold;
+}
+#economia {
     margin-top: 15px;
     font-weight: bold;
 }

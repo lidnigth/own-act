@@ -8,5 +8,7 @@ function calcular() {
     }
 
     const valorFinal = preco - (preco * desconto / 100);
+    const economizz = preco - valorFinal
     document.getElementById("resultado").innerText = `Preço com desconto: R$ ${valorFinal.toFixed(2)}`;
+    document.getElementById("economia").innerText = `Você economizou: R$ ${economizz.toFixed(2)}`;
 }
