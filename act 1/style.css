@@ -32,6 +32,11 @@ button {
     margin-top: 15px;
     font-weight: bold;
 }
+#resultado.erro {
+    color: rgb(252, 164, 164);
+    margin-top: 15px;
+    font-weight: bold;
+}
 #economia {
     margin-top: 15px;
     font-weight: bold;
