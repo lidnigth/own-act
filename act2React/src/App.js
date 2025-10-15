@@ -24,12 +24,24 @@ function App() {
       isCompleted: false,
     },
   ]);
+
+  function onTaskClick(taskId) {
+    const newTasks = tasks.map((task) => {
+      if (task.id === taskId) {
+        return { ...task, isCompleted: !task.isCompleted };
+      }
+
+      return task;
+    });
+    setTasks(newTasks);
+  }
+
   return (
     <div className="fundo">
       <div className="content">
         <h1 className="title">Lista de tarefas</h1>
         <AddTasks />
-        <Tasks tasks={tasks} />
+        <Tasks tasks={tasks} onTaskClick={onTaskClick} />
       </div>
     </div>
   );
